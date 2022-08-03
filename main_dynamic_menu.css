@@ -81,20 +81,23 @@ div#layout-menu {
 	padding-bottom: 25px;
 	height: calc(100% - 97px);
 	/* min-width: 280px; */
-	min-width: 100px;
+	min-width: 200px;
 	position: fixed;
 	overflow: scroll;
 	background: #f6f8fa;
+    /* background: #f7f1f1; */
+    /* background: #202020; */
 	border-right: 0.8px solid #e1e4e8;
 }
 
 #layout-menu a {
 	padding: 0px;
-	line-height: 1.5;
+	line-height: 1.75;
 }
 
 
 div#layout-content-container {
+	/* width: calc(100vw - 100.8px); */
 	width: calc(100vw - 100.8px);
 	min-height: calc(100vh - 70px);
 	margin-left: 100.8px;
@@ -109,7 +112,7 @@ div#layout-content{
 	padding-bottom: 25px;
 	padding-left: 35px;
 	padding-right: 35px;
-	min-width: 200px;
+	min-width: 100px;
 	max-width: 1000px;
 	margin: auto;
 }
@@ -158,17 +161,17 @@ div.menu-category {
 	margin-top: 16px;
 	padding-top: 8px;
 	padding-bottom: 0.1em;
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
 	font-size: 18px;
 	line-height: 2;
 	border-top: 0.8px solid #e1e4e8;
 }
 
 div.menu-item {
-	font-size: 16px;
-	padding-left: 25px;
-	padding-right: 25px;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 div#toptitle {
@@ -558,28 +561,29 @@ div#layout-menu-container .closebtn:hover {
 	}
 
 	div#layout-menu-container{
-		width:0;
+		/* width:100px; */
 	}
 
 	div#layout-menu {
-		padding-top: 20px;
+		padding-top: 0px;
 		transition: 0.5s;
-		min-width: 0px;
-		width: 0px;
-		box-shadow: 8px 0px 10px 0 rgba(0, 0, 0, 0.3);
-		border: none;
-		/*position: fixed;*/
+		min-width: 100px;
+		width: 100px;
+		position: fixed;
+        overflow: scroll;
+        background: #f6f8fa;
+        border-right: 0.8px solid #e1e4e8;
 	}
 	div#layout-content-container {
 		transition: margin-left .5s;
-		margin-left:0px;
-		width: 100%;
+		margin-left:100px;
+		width: 80%;
 	}
 	div#main{
 		padding-left: calc(100vw - 150px);
 	}
 
-	.openbtn {
+	/* .openbtn {
 	  font-size: 26px;
 	  cursor: pointer;
 	  background: none;
@@ -612,8 +616,8 @@ div#layout-menu-container .closebtn:hover {
 	div#layout-menu-container .closebtn:hover {
 		background: #fdaeb7;
 		color: #cb2431;
-	}
-}
+	} */
+} 
 
 /* Width to center image */
 @media screen and (max-width: 700px) {
